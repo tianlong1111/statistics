@@ -88,8 +88,8 @@ class UploadHistoryLog extends Thread {
         JSONObject jsonObject = null;
         try {
             jsonObject = new JSONObject(jsonStr);
-            jsonObject.put("sourceApp",UmsConstants.sourceApp);
-            jsonObject.put("source",UmsConstants.source);
+            jsonObject.put("productId",UmsConstants.productId);
+            jsonObject.put("platId",UmsConstants.platId);
             jsonObject.put("channel",UmsConstants.channel);
             jsonObject.put("userId", UmsConstants.userId);
             jsonObject.put("areaCode", UmsConstants.areaCode);

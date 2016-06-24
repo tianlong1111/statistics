@@ -35,19 +35,19 @@ public class UmsAgent {
      * @param context 上下文
      * @param urlDomain 数据传输接口
      * @param urlDomainForAll 数据批量传输接口
-     * @param sourceApp 产品号
+     * @param productId 产品号
      * @param channel 渠道号
      */
     public static void init(final Context context,
                             final String urlDomain,
                             final String urlDomainForAll,
-                            final String sourceApp,
+                            final String productId,
                             final String channel) {
         if(!isInited){
             UmsConstants.channel = channel;
             UmsConstants.urlDomain = urlDomain;
             UmsConstants.urlDomainForAll = urlDomainForAll;
-            UmsConstants.sourceApp = sourceApp;
+            UmsConstants.productId = productId;
             DeviceInfo.init(context);
             AppInfo.init(context);
             UmsAgent.postHistoryLog(context);

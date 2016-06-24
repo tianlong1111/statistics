@@ -45,7 +45,7 @@ class UmsConstants {
     public static String urlDomainForAll = "http://172.16.32.7:8081/actionDetail/collect.do?";
 
     // 平台号（Android/iOS）
-    public static String source = "20";
+    public static String platId = "20";
 
     // 渠道号（channel）
     public static String channel = "xiaomi";
@@ -54,7 +54,7 @@ class UmsConstants {
     public static String userId = "";
 
     // 产品号
-    public static String sourceApp = "6";
+    public static String productId = "6";
 
     //区域码
     public static String areaCode = "00001";

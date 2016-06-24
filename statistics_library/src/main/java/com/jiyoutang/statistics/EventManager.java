@@ -43,8 +43,8 @@ class EventManager {
         StringBuffer buffer = new StringBuffer();
         try {
             buffer.append("uniqueCode=" + uniqueCode);
-            buffer.append("&sourceApp=" + UmsConstants.sourceApp);
-            buffer.append("&source=" + UmsConstants.source);
+            buffer.append("&productId=" + UmsConstants.productId);
+            buffer.append("&platId=" + UmsConstants.platId);
             buffer.append("&channel=" + UmsConstants.channel);
             buffer.append("&userId=" + UmsConstants.userId);
             buffer.append("&areaCode=" + UmsConstants.areaCode);

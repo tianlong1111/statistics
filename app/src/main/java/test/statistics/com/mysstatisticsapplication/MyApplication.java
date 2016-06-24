@@ -17,14 +17,14 @@ public class MyApplication extends Application {
         //数据统计上传的批量接口域名
         String urlDomainForAll = "http://172.16.32.7:8081/actionDetail/collect.do?";
         //产品号
-        String sourApp = "";
+        String productId = "";
         //渠道号
         String channel = "";
         //设置用户id
         UmsAgent.setUserId("");
         //设置区域码
         UmsAgent.setAreaCode("");
-        UmsAgent.init(this, urlDomain, urlDomainForAll, sourApp, channel);
+        UmsAgent.init(this, urlDomain, urlDomainForAll, productId, channel);
         UmsAgent.onAppStart(this);
     }
 }
