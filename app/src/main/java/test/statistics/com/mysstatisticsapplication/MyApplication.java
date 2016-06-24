@@ -20,10 +20,11 @@ public class MyApplication extends Application {
         String sourApp = "";
         //渠道号
         String channel = "";
-        //区域码
-        String areaCode = "";
+        //设置用户id
         UmsAgent.setUserId("");
-        UmsAgent.init(this, urlDomain, urlDomainForAll, sourApp, channel, areaCode);
+        //设置区域码
+        UmsAgent.setAreaCode("");
+        UmsAgent.init(this, urlDomain, urlDomainForAll, sourApp, channel);
         UmsAgent.onAppStart(this);
     }
 }
